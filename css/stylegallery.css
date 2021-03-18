@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* Beginnig of Section */
+section {
+    margin-top: 100px;
+}
+
+/* Starting of Left Content */
+.left #about {
+    padding: 80px 20px 50px;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+.left #about h1 {
+    display: inline-block;
+    color: rgb(121, 195, 215);
+    font-family: "zeyada";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1%;
+    background: white;
+    padding: 0 15px;
+}
+.gallery{
+    text-align: center;
+}
+.gallery>div{
+  
+    line-height: 35px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.gallery a{
+    display: block;
+    width:100%;
+    overflow: hidden;
+    
+}
+ .gallery a img{
+    width:100%;
+}
+#about .owl-nav button{
+    background:transparent;
+    font-size:3em;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 10px;
+    position: absolute;
+    top:40%;
+    outline: none;
+}
+#about .owl-nav button:hover{
+    background-color: rgba(255, 255, 255, 0.582);
+}
+#about .owl-nav button.owl-next{
+    right:10px;
+    color: white;
+}
+#about .owl-nav button.owl-prev{
+    left:10px;
+    color: white;
+}
+#about .owl-dots{
+    text-align: center;
+}
+#about .owl-dot{
+    background: rgb(212, 208, 208);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin:5px 2px;
+    outline: none;
+}
+#about .owl-dot.active,
+#about .owl-dot:hover{
+    background: rgb(122, 122, 122);
+}
+.slider{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.slider2 .owl-item{
+    height: 470px;
+}
+
+/* End of Left Content */
+/* End of Section */
+/* Responsive */
+@media screen and (max-width:992px){
+    #about .services a{
+        font-size: 17px !important;
+    }
+  
+}

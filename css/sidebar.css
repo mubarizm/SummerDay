@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Starting of Right Content */
+.right>div {
+    padding: 20px;
+    border: 1px solid #eee;
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.right>div p {
+    text-align: left;
+}
+
+.right>div h1 {
+    display: inline-block;
+    color: rgb(121, 195, 215);
+    font-family: "zeyada";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10%;
+    background: white;
+    padding: 0 15px;
+
+}
+
+.right>div.about h1 {
+    top: -15%;
+}
+
+.right .about img {
+    border-radius: 100%;
+}
+
+.categories li {
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.right .categories {
+    padding-bottom: 10px;
+}
+
+.categories li a {
+    display: block;
+    padding: 15px 10px;
+    color: rgb(46, 45, 45);
+}
+
+.categories li a:hover {
+    text-decoration: none;
+    color: rgb(121, 195, 215);
+}
+
+.right>div.tags h1 {
+    top: -25%;
+}
+
+.right>div.tags {
+    text-align: left;
+    padding: 30px 40px;
+}
+
+.tags a {
+    color: rgb(46, 45, 45);
+    text-transform: uppercase;
+    font-size: .7em;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.tags a:hover {
+    color: rgb(121, 195, 215);
+}
+
+.right>div.instagram {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.right>div.instagram h1 {
+    top: -6%;
+}
+
+.instagram img {
+    width: 100%;
+}
+
+.instagram div {
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* End of Right Content */
+

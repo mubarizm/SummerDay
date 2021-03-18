@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* Beginnig of Section */
+section {
+    margin-top: 100px;
+}
+
+/* Starting of Left Content */
+.left #about {
+    padding: 80px 40px 50px;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+.left #about h1 {
+    display: inline-block;
+    color: rgb(121, 195, 215);
+    font-family: "zeyada";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1%;
+    background: white;
+    padding: 0 15px;
+}
+
+.left #about>p a {
+    color: black;
+    text-decoration: none;
+}
+
+.left #about>p a:hover {
+    color: rgb(121, 195, 215);
+}
+.left #about .staff{
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 70px;
+}
+.left #about .staff img {
+    width: 100%;
+}
+#about h3 {
+    text-align: center;
+    color: rgb(121, 195, 215);
+    font-size: 1.6em;
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+#about button{
+    color: white;
+    font-family: "zeyada";
+    background-color:rgb(121, 195, 215) ;
+    border: none;
+    padding: 5px 25px;
+    font-size: 25px;
+    transition: all .2s ease;
+    margin-top:10px;
+}
+#about button:hover{
+    background-color:rgb(69, 184, 216) ;
+
+}
+#about .services{
+    position: relative;
+    padding: 100px 30px 70px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+#about .services h2{
+    font-family: "zeyada";
+    color: rgb(98,183,221);
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+#about .services a{
+ color:rgb(121, 195, 215) ;
+font-size: 25px;
+font-family: "Open Sans";
+}
+
+#about .services .rounded-circle{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    line-height: 120px;
+    cursor: pointer;
+    margin: 15px auto;
+}
+.background1{
+background-color: rgb(241,214,214);
+}
+.background2{
+background-color: rgb(182,232,216);
+}
+.background3{
+background-color: rgb(182,190,232);
+}
+.background4{
+    background-color: rgb(255,251,202);
+}
+#about .services .rounded-circle i{
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+#about .services .rounded-circle:hover i{
+    color: rgb(98,183,221);
+}
+#about .owl-nav button{
+    background:transparent;
+    font-size:3em;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    position: absolute;
+    top:30%;
+    outline: none;
+}
+#about .owl-nav button:hover{
+    background-color: rgba(255, 255, 255, 0.582);
+}
+#about .owl-nav button.owl-next{
+    right:10px;
+}
+#about .owl-nav button.owl-prev{
+    left:10px;
+}
+#about .owl-dots{
+    text-align: center;
+}
+#about .owl-dot{
+    background: rgb(212, 208, 208);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin:5px 2px;
+    outline: none;
+}
+#about .owl-dot.active,
+#about .owl-dot:hover{
+    background: rgb(122, 122, 122);
+}
+
+/* End of Left Content */
+/* End of Section */
+/* Responsive */
+@media screen and (max-width:992px){
+    #about .services a{
+        font-size: 17px !important;
+    }
+  
+}

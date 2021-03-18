@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Zeyada&display=swap');
+/* Start of Header */
+
+header .brand {
+    height: 223px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    background-image: url(../images/header-grunge.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    min-height: 63px;
+    width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    position: relative;
+    transition: all .4s linear;
+
+}
+
+header nav .nav-btn {
+    display: none;
+    font-family: "zeyada";
+    color: white;
+    background: rgb(121, 195, 215);
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+header nav .responsive-nav {
+    margin-top: 70px;
+    display: none;
+}
+
+header nav .responsive-nav li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header nav .responsive-nav li.sub-menu {
+    border-bottom: 1px solid #eee;
+}
+
+header nav .responsive-nav li.sub-menu {
+    font-size: .8em;
+}
+
+header nav .responsive-nav a {
+    text-transform: uppercase;
+    color: rgb(82, 81, 81);
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+header nav .responsive-nav li:hover a {
+    color: rgb(121, 195, 215);
+}
+
+header nav .nav-menu {
+    display: flex;
+    justify-content: center;
+    line-height: 63px;
+}
+
+header nav .nav-menu .nav-item {
+    list-style: none;
+    position: relative;
+}
+
+header nav .nav-menu .nav-item a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgb(121, 119, 119);
+    padding: 25px;
+    letter-spacing: 2px;
+}
+
+header nav .nav-menu .nav-item a.active {
+    color: rgb(121, 195, 215);
+}
+
+header nav .nav-menu .nav-item a:hover {
+    text-decoration: none;
+    color: rgb(121, 195, 215);
+}
+
+header nav .nav-menu .nav-item:hover .dropdown {
+    display: block;
+}
+
+header nav .dropdown {
+    border: 1px solid #eee;
+    position: absolute;
+    top: 50px;
+    background: white;
+    display: none;
+    z-index: 10;
+
+}
+
+header nav .dropdown li {
+    border-bottom: 1px solid #eee;
+    height: 45px;
+    line-height: 45px;
+    white-space: nowrap;
+}
+
+header nav .dropdown li a {
+    font-size: .8em;
+}
+
+/* End of Header */
+
+/* Start of Footer */
+footer {
+    width: 100%;
+    background: url(../images/footer3.png);
+    min-height: 480px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer::before {
+    content: "";
+    background: url(../images/footer1.png);
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer::after {
+    content: "";
+    background: url(../images/footer1.png);
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+footer h1 {
+    font-family: "zeyada";
+    color: rgb(95, 93, 93);
+}
+
+footer .about span:hover {
+    color: rgb(60, 183, 218);
+    cursor: pointer;
+    border-bottom: 1px solid rgb(60, 183, 218);
+}
+
+footer .links a {
+    display: block;
+    color: rgb(36, 35, 35);
+    text-decoration: none;
+    margin-bottom: 30px;
+    transition: all .2s ease;
+}
+
+footer .links a:hover {
+    color: rgb(60, 183, 218);
+
+}
+
+.news .btn {
+    font-family: "zeyada";
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer .contact {
+    margin-bottom: 70px;
+}
+
+footer .contact i {
+    font-size: 2em;
+    color: rgb(78, 78, 78);
+    padding: 10px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+footer .contact i:hover {
+    color: rgba(78, 78, 78, .7);
+}
+
+footer p.info {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* End of Footer */
+
+/* Responsive */
+@media screen and (max-width:768px) {
+    header nav .nav-menu {
+        display: none;
+    }
+
+    header nav .nav-btn {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width:769px){
+    header nav .responsive-nav {
+        display: none !important;
+    }
+}
